@@ -14,6 +14,12 @@ function actualizarContador() {
 function agregar() {
     const texto = contenidoInput.value;
 
+     if (texto.trim() === "") {
+    alert("Llena los campos");
+    info.innerText = "Llena los campos.";
+    return;
+    }
+
     if (texto.trim() === "") return;
 
     total += 1;
