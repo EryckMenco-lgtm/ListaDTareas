@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(227, 255, 215);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+main {
+    width: 350px;
+
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 90px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 520px;
+}
+
+#contenido {
+    flex-grow: 1;
+    padding: 7px;
+    border: none;
+    border-radius: 6px;
+    background: #eaf4ff;
+}
+
+#agregarBtn {
+    background: #4da3ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#agregarBtn:hover {
+    background: #2d8cff;
+}
+
+#tareas {
+    background: rgb(214, 218, 239);
+    border-radius: 10px;
+}
+
+#tareas div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+#tareas div:last-child {
+    border-bottom: none;
+}
+
+#tareas p {
+    flex: 6;
+}
+
+#tareas input[type="checkbox"] {
+    cursor: pointer;
+}
+
+#tareas button {
+    background: #ff4d4d;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resultado {
+    background-color: #5ee467;
+    border-radius: 6px;
+    
+}
+
+#info {
+    margin-top: 10px;
+    font-size: 20px;
+    height: 30px;
+    color: #000000;
+    text-align: center;
+    font-family: fantasy;
+}
