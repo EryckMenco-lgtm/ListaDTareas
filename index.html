@@ -6,23 +6,25 @@
     <title>Lista de tarea</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
 </head>
-<body> 
-    
-        <h1>Lista de tarea</h1>
-    <br>
+<body>
 
+    <div class="contenedor" >
+        <h1>Lista de tarea</h1>
     <nav>
-        <input type="text" id="contenido">
+        <input type="text" id="contenido" placeholder="Agrega tu tarea">
         <button id="agregarBtn" >Agregar</button>
     </nav>
     <main>
-            <section id="tareas"></section>
-            <div id="resultado">
-                <p id="info">0 tareas - 0 completadas</p>
-                <p id="contador"></p>
-            </div>
-            
+        <section class="tareas">
+            <div id="tareas"></div>
+        </section>
+        <div id="resultado">
+            <p id="info">0 tareas - 0 completadas</p>
+            <p id="contador"></p>
+        </div>
     </main>
+    </div>
 </body>
 </html>

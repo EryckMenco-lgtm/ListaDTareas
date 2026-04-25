@@ -1,30 +1,35 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Macondo, fantasy ;
+
 }
 
 body {
-    background-color: rgb(227, 255, 215);
+    background-color: #b9d1f6;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
 }
 
-main {
-    width: 350px;
-
+.contenedor {
+    background-color: rgb(227, 255, 215);
+    width: 500px;
+    padding: 30px;
+    margin: 100px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.644);
+    text-align: center;
+    font-size: 30px;
 }
 
 h1 {
     margin-top: 10px;
-    font-size: 90px;
+    font-size: 50px;
     color: #555;
-    display: flex;
-    justify-content: space-between;
 }
 
 nav {
@@ -35,12 +40,12 @@ nav {
     max-width: 520px;
 }
 
-#contenido {
+#contenido  {
     flex-grow: 1;
-    padding: 7px;
     border: none;
+    padding: 7px;
     border-radius: 6px;
-    background: #eaf4ff;
+    background: rgb(239, 255, 232);
 }
 
 #agregarBtn {
@@ -54,27 +59,51 @@ nav {
 
 #agregarBtn:hover {
     background: #2d8cff;
+    transform: scale(1.05);
+}
+
+
+.tareas {
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 300px;
+    min-width: 200px;
 }
 
 #tareas {
-    background: rgb(214, 218, 239);
-    border-radius: 10px;
+    word-break: break-all;
+    padding: 5px;
+    width: 100%;
 }
 
 #tareas div {
     display: flex;
-    align-items: center;
     gap: 10px;
     padding: 8px;
-    border-bottom: 1px solid #eee;
-}
-
-#tareas div:last-child {
-    border-bottom: none;
+    width: 100%;
+    max-width: 100%;
+    height: 56px;
+    overflow: hidden; 
+    align-items: center;
+    background: rgb(214, 218, 239);
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.083);
 }
 
 #tareas p {
     flex: 6;
+    width: 100%;
+    white-space: normal;
+    overflow-y: auto;    
+    max-height: 60px; 
+    font-size: 20px;
+    padding: 10px 10px;
+    border-left: 1px solid #eaf4ff ;
+    border-right: 1px solid #eaf4ff; 
+}
+
+#tareas div:last-child {
+    border-bottom: none;
 }
 
 #tareas input[type="checkbox"] {
@@ -98,7 +127,7 @@ nav {
 
 #info {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 15px;
     height: 30px;
     color: #000000;
     text-align: center;
